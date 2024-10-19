@@ -1,0 +1,585 @@
+@font-face {
+	font-family: 'Post No Bills Jaffna';
+	src: url('../font/PostNoBillsJaffna-ExtraBold.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+html {
+	font-family: tahoma, sans-serif;
+	color: #777;
+	background-color: white;
+	max-width: 1920px;
+	min-width: 1280px;
+	margin: 0 auto;
+}
+html::-webkit-scrollbar {
+  width: 0px;
+  background: rgba(255, 255, 255, 0.0);
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+header {}
+main {}
+footer {}
+
+.body_wrapper {}
+.header {}
+.header_inline__block {
+	background-color: #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 150px;
+}
+.header_inline__block ul {}
+.header_inline__block li {
+	display: inline-block;
+	list-style: none;
+	margin: 0 10px;
+}
+.header_inline__block .i_left_span {
+	position: relative;
+}
+.header_inline__block .i_left_span::after {
+	content: '|';
+	color: grey;
+	position: absolute;
+	right: -15px;
+	top: 0;
+}
+.header_inline__block a {
+	text-decoration: none;
+	color: #777;
+	transition: all .3s;
+}
+.header_inline__block a:hover {
+	color: white;
+}
+.inline_left, .inline_right {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.inline_left {
+
+}
+.inline_right {}
+.inline_right li {
+	position: relative;
+}
+.inline_right li:nth-child(1):after{
+	content: "/";
+	color: grey;
+	position: absolute;
+	right: -15px;
+	top: 0;
+}
+.inline_right li {
+	position: relative;
+}
+.inline_right li:nth-child(1):before {
+	content: '\2386';
+	position: absolute;
+	left: -20px;
+	top: -5px;
+	font-size: 1.3em;
+}
+.header_nav {
+	background-color: #0F0F0F;
+	padding: 0 150px;
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+}
+.menu_list {
+	padding: 15px 0;
+}
+.menu_list li {
+	display: inline-block;
+	list-style: none;
+}
+.menu_list a {
+	text-decoration: none;
+	color: #777;
+	padding: 100px 20px;
+	transition: all .3s;
+}
+.menu_list a:hover {
+	background-color: #333;
+	color: white;
+}
+.menu_logo_box {
+	display: inline-block;	
+}
+.menu_logo {
+	font-family: Arial;
+	font-weight: 700;
+	color: white;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+.header_content {
+	background-image: url('https://images.wallpaperscraft.ru/image/single/kostium_pidzhak_rubashka_157048_1920x1080.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.header_wrapper {
+	min-height: 810px;
+	background-color: #0009;
+	padding: 1%;
+	display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+}
+.header_text {}
+.header_title {
+	margin: 0 auto;
+	padding: 100px 20px;
+	border: 4px solid white;
+	width: 300px;
+	text-align: center;
+	line-height: .1;
+}
+.h_title {
+	font-family: 'Post No Bills Jaffna';
+	font-size: 3em;
+	color: white;
+	position: relative;
+}
+.h_title::after {
+	content: '';
+	position: absolute;
+	left: 85px;
+	bottom: -20px;
+	width: 130px;
+	height: 2px;
+	color: white;
+	background-color: white;
+}
+.h_subtitle {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.4em;
+	color: white;
+
+}
+.header_description {
+	width: 600px;
+	margin: 100px auto 0 auto;
+	text-align: center;
+}
+
+/*MAIN*/
+.main {}
+.main_wrapper {}
+.main_content {
+	min-height: 100vh;
+}
+.first_level_block {
+	display: flex;
+	min-height: 600px;
+}
+.f_l_clock_block {
+	background-color: black;
+	color: white;
+	padding: 70px 50px;
+	display: inline-block;
+	width: 50.3%;
+	overflow: hidden;
+}
+.f_l_c_title {
+	font-family: 'sans-serif';
+	font-size: 2.3em;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 100px;
+	position: relative;
+}
+.f_l_c_title:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 130px;
+	height: 1px;
+	background-color: #777;
+}
+.f_l_c_posts {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.f_l_c_post {
+	max-width: 260px;
+	min-width: 175px;
+	margin: 0 10px;
+}
+.f_l_c_p_image {
+	background-color: #222;
+	min-height: 320px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 22px;
+}
+.f_l_c_p_image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.f_l_c_p_text {
+	margin: 10px 0;
+}
+.f_l_c_p_t_title {}
+.f_l_c_p_t_title a {
+	text-decoration: none;
+	color: white;
+	transition: all .2s;
+	border-bottom: 1px solid transparent;
+}
+.f_l_c_p_t_title a:hover {
+	border-bottom: 1px solid #fff;
+}
+.f_l_c_p_t_price {
+	color: #fff;
+}
+
+/*CATALOG BLOCK*/
+.f_l_catalog_block {
+	display: inline-block;
+	overflow: hidden;
+	width: 49.7%;
+	background-image: url('https://p0.piqsels.com/preview/294/503/610/adult-boy-businessman-facial-hair.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: local;
+	background-position: right;
+	position: relative;
+}
+.f_l_catalog_wrapper {
+	background-color: #0009;
+	min-height: 100%;
+	padding: 1%;
+}
+.f_l_catalog_text {
+	text-align: center;
+	line-height: 2;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 100px;
+}
+.f_l_catalog_title {
+	font-family: 'sans-serif';
+	font-size: 2.3em;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+}
+.f_l_catalog_button {}
+.f_l_catalog_button a {
+	text-transform: uppercase;
+	padding: 15px 45px;
+	color: white;
+	text-decoration: none;
+	border: 1px solid white;
+	transition: all .3s;
+}
+.f_l_catalog_button a:hover {
+	background-color: white;
+	color: #333;
+}
+/*SECOND BLOCK*/
+.second_level_block {
+	min-height: 600px;
+	display: flex;
+}
+.s_l_photo_block {
+	overflow: hidden;
+	background-image: url('https://img5.goodfon.ru/wallpaper/nbig/f/70/paren-muzhchina-poza-kostium-stil-rubashka-pidzhak-boroda-vz.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: local;
+	background-position: right;
+	display: inline-block;
+	width: 49.7%;
+}
+.s_l_p_b_wrapper {
+	min-height: 100%;
+	background-color: #0009;
+}
+
+/*COLLECTION BLOCK*/
+.s_l_collection_block {
+	display: inline-block;
+	width: 50.3%;
+	background-color: #000;
+	padding: 70px 50px;
+	overflow: hidden;
+}
+.s_l_c_b_wrapper {}
+.s_l_c_b_text {
+	text-align: center;
+}
+.s_l_c_b_t_title {
+	font-family: 'sans-serif';
+	font-size: 2.3em;
+	color: white;
+	text-transform: uppercase;
+	position: relative;
+}
+.s_l_c_b_t_title:after {
+	content: '';
+	position: absolute;
+	bottom: -35px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 120px;
+	height: 1px;
+	background-color: #777;
+}
+.s_l_c_b_t_description {
+	margin: 75px 175px;
+	color: #999;
+}
+.s_l_c_b_t_button a {
+	color: #999;
+	text-decoration: none;
+	padding: 10px 55px;
+	border: 1px solid #999;
+	text-transform: uppercase;
+	transition: all .3s;
+}
+.s_l_c_b_t_button a:hover {
+	background-color: white;
+	color: #333;
+}
+
+/*NEW ITEMS*/
+.new_item_block {
+	background-color: #000;
+	min-height: 900px;
+	padding: 70px 50px;
+}
+.item_block_title {
+	font-family: 'sans-serif';
+	font-size: 2.3em;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 100px;
+	position: relative;
+	color: white;
+}
+.item_block_title:after {
+	content: '';
+	position: absolute;
+	bottom: -35px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 120px;
+	height: 1px;
+	background-color: #777;
+}
+.items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.item {
+	max-width: 260px;
+	min-width: 175px;
+	margin: 0 10px;
+}
+.itme_image {
+	background-color: #222;
+	min-height: 320px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 22px;
+}
+.itme_image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.item_text {
+	margin: 10px 0;
+}
+.item_title a {
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid transparent;
+	transition: all .2s;
+}
+.item_title a:hover {
+	border-bottom: 1px solid white;
+}
+.item_price {
+	color: #fff;
+}
+/*//NEW ITEMS*/
+
+/*BRANDS*/
+.brands_block {
+	background-color: #0F0F0F;
+	padding: 70px 50px;
+}
+.brands_block_title {
+	font-family: 'sans-serif';
+	font-size: 2.3em;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 100px;
+	position: relative;
+	color: white;
+}
+.brands_block_title:after {
+	content: '';
+	position: absolute;
+	bottom: -35px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 120px;
+	height: 1px;
+	background-color: #777;
+}
+.brands_list {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.brands_list ul {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 0 -40px;
+}
+.brands_list li {
+	display: inline-block;
+	list-style: none;
+}
+.brands_list img {}
+/*//BRANDS*/
+
+/*ABOUT US*/
+.about_us_block {
+	background-image: url('https://www.firestock.ru/wp-content/uploads/2014/04/Fotolia_34534089_Subscription_XL-700x468.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.about_us_block_effect {
+	min-height: 100%;
+	background-color: rgba(0,0,0,.8);
+}
+.about_us_block_wrapper {
+	padding: 70px 50px;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.about_shop {
+	display: inline-block;
+	width: 350px;
+}
+.about_shop_text {}
+.about_shop_title {
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+.about_shop_description {}
+.about_category {
+	max-width: 400px;
+}
+.about_category_wrapper {}
+.about_category_title {
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+.about_category_list {
+
+}
+.about_category_list ul {
+	margin: 0 0 0 -60px;
+}
+.about_category_list li {
+	display: inline-block;
+	list-style: none;
+	margin: 20px;
+}
+.about_category_list a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+	background-color: #0F0F0F;
+	transition: all .3s;
+}
+.about_category_list a:hover {
+	background-color: #222;
+}
+.about_send {
+	display: inline-block;
+	width: 400px;
+}
+.about_send_title {
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+.about_send_description {
+	margin: 50px 0;
+}
+.about_send_form {}
+.input {
+	background-color: #8888;
+	color: #999;
+	border: 0;
+	padding: 15px;
+	transition: all .3s;
+}
+.submit {
+	background-color: #000;
+	color: white;
+	text-transform: uppercase;
+	border: 0;
+	padding: 15px;
+	margin: 0 0 0 -5px;
+	cursor: pointer;
+	transition: all .2s;
+}
+.submit:hover {
+	background-color: #222;
+}
+/*//ABOUT US*/
+
+/*FOOTER*/
+.footer {
+	background-color: #0F0F0F;
+	overflow: hidden;
+}
+.footer_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.footer_nocopy {}
+.footer_author {}
+/*//FOOTER*/
