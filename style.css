@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        font-size: 14px;
+        color: white;
+        transition: .3s ease-in-out;
+}
+.body_block {}
+
+/* VIDEO BG SETTINGS */
+    .video-background {
+        position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        overflow: hidden;
+        z-index: -1; /* Помещает видео на задний план */
+        filter: blur(5px);
+    }
+    .video-background video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Обрезает видео, чтобы заполнить контейнер */
+    }
+/* // */
+
+.body_wrapper {
+    position: relative;
+        z-index: 1;
+
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: min-content;
+}
+/* PROFILE BLOCK SETTINGS */
+    .profile_block {
+        margin: 10px;
+    }
+    .profile_wrapper {
+        background-color: #1f1f1fef;
+            min-width: 300px;
+            box-shadow: 0 0 40px 1px #1a1919ef;
+            border-radius: 15px;
+        padding: 30px;
+    }
+    .profile_logo {
+        text-align: center;
+    }
+        .profile_logo a {
+            
+        }
+        .profile_logo img {
+            max-width: fit-content;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+        }
+        .profile_logo h1 {
+            margin-top: 20px;
+            font-size: 24px;
+            width: fit-content;
+                
+        }
+    .profile_social_list {}
+    .profile_social_list_wrapper {
+        width: fit-content;
+        margin: 0 auto;
+        background-color: #1a1919ef;
+        border-radius: 15px;
+
+        margin-top: 20%;
+        padding: 5%;
+    }
+    .profile_list_ul {
+    }
+    .profile_list_li {
+        display: inline-block;
+        list-style: none;
+    }
+    .profile_list_link {
+        margin: 2px;
+    }
+        .profile_list_link img {
+            width: 34px;
+            height: 34px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+
+        }
+        .profile_list_link:hover {
+            filter: blur(1px);
+        }
+
+/* MUSIC PLAYER SETTINGS */
+.musicplayer_block {
+    
+}
+.profile_music_player {
+    
+}
+/* // */
+
+/* MEDIA SETTINGS */
+    @media screen and (max-width: 900px) {
+        .body_wrapper {
+            position: relative;
+                z-index: 1;
+        
+            display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                /* width: min-content; */
+        }
+    }
+/* // */
